@@ -6,8 +6,8 @@ Runs on Python 3.12
 
 # Setup instructions:
 1. git clone this repository
-2. pip install -r requirements.txt
+2. `pip install -r requirements.txt`
 3. Start your LM Studio server and modify the server.py code to point to the ip address for the LLM and Embedder. You may choose to use other models if needed.
-4. Run the command on terminal: streamlit run server.py
+4. Run the command on terminal: `streamlit run server.py`
 
 # Features Demo:
