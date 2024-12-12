@@ -78,7 +78,7 @@ class LMStudioEmbeddings(Embeddings):
 
 
 embeddings = LMStudioEmbeddings(
-    api_url='http://192.168.69.1:1234/v1/embeddings',   # Adjust to your LMStudio embedding endpoint
+    api_url='http://localhost:1234/v1/embeddings',   # Adjust to your LMStudio embedding endpoint
     model_name='text-embedding-nomic-embed-text-v1.5'                 # Adjust to your embedding model name
 )
 
@@ -211,7 +211,7 @@ prompt = PromptTemplate(
 class LLMStudioLLM(LLM):
     api_key: str = ''  # Add your API key if required
     model_name: str = 'llama-3.2-3b-instruct'  # Use your actual model name
-    api_url: str = 'http://192.168.69.1:1234/v1/completions'  # Use the LMStudio server IP
+    api_url: str = 'http://localhost:1234/v1/completions'  # Use the LMStudio server IP
 
     def _call(self, prompt: str, stop: Optional[List[str]] = None) -> str:
         headers = {'Content-Type': 'application/json'}
@@ -249,7 +249,7 @@ class LLMStudioLLM(LLM):
 model_local = LLMStudioLLM(
     api_key='',  # Add your API key if required
     model_name='llama-3.2-3b-instruct',
-    api_url='http://192.168.69.1:1234/v1/completions'  # Use the LMStudio server IP
+    api_url='http://localhost:1234/v1/completions'  # Use the LMStudio server IP
 )
 
 # Create the LLM chain
