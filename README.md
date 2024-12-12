@@ -1,5 +1,4 @@
-# Streamlit-RAG
-Multi-document RAG Q&A with Langchain + LanceDB + LMStudio. 
+# Streamlit-RAG: Multi-document RAG Q&A with Langchain + LanceDB + LMStudio. 
 
 Works completely offline and you can use your own local models. We use LM Studio llama3.2 for the LLM and nomic-embed-text for the embedder.
 
